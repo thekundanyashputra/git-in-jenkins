@@ -1,7 +1,7 @@
-FROM python:3.10-slim
+FROM python
 MAINTAINER Kundan Kumar "thekundanyashputra@gmail.com"
 COPY . /combo
 WORKDIR /combo
-RUN pip install -r requirements.txt
+
 ENTRYPOINT ["python"]
 CMD ["data.py"]
